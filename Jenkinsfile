@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('PreBuild') {
       steps {
-        sh './gradlew build'
+        sh './gradlew clean build'
       }
     }
     stage('Build') {
